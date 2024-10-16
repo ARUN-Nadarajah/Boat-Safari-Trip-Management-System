@@ -1,0 +1,77 @@
+header {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    height: 70px; 
+    background-color: rgba(55, 80, 90,0.8); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0,0.5); 
+    position: sticky; 
+    top: 0; 
+    left: 0;
+    transition: 0.5s linear;
+}
+header.scroll{
+    background-color: rgba(55, 80, 90,0.98);
+}
+
+.navigation {
+    position: relative;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: x-large;
+    /* font-weight: 600; */
+    position: relative;
+    padding: 1px; 
+    transition: 0.5s;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 2px;
+    width: 100%;
+    background: rgb(199, 197, 194);
+    transform: scaleX(0);
+    transition: 0.5s;
+}
+
+.navigation a:hover::after{
+    transform: scaleX(1);
+
+}
+
+.navigation a{
+    opacity: 0.5;
+}
+
+.navigation a:first-of-type{
+    opacity:1;
+}
+
+.navigation a:hover{
+    opacity: 1;
+    color: rgb(247, 151, 92);
+}
+
+.navigation:hover a:not(:hover){
+    opacity: 0.5;
+}
+
+#profile{
+    background: transparent;
+    border: none;
+    font-size: medium;
+    font-weight: 600;
+    color: aliceblue;
+}

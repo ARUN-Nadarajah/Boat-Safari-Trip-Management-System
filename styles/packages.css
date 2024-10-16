@@ -1,0 +1,90 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light background color */
+    color: #333;
+}
+
+/* Container Styles */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #4CAF50; /* Green color for the main heading */
+}
+
+/* Packages Styles */
+.packages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.package {
+    background-color: #fff; /* White background for packages */
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px; /* Fixed width for consistency */
+    transition: transform 0.3s ease; /* Smooth scale effect */
+}
+
+.package:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.package-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.package-header h2 {
+    color: #FF6347; /* Tomato color for package title */
+}
+
+.price {
+    background-color: #FF6347; /* Tomato background for price */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.package img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    margin: 10px 0; /* Space around images */
+}
+
+.package p {
+    margin: 10px 0; /* Space between paragraphs */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .packages {
+        flex-direction: column;
+        align-items: center; /* Center-align packages on smaller screens */
+    }
+
+    .package {
+        width: 90%; /* Make packages full-width on smaller screens */
+    }
+}

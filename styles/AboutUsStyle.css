@@ -1,0 +1,97 @@
+.image
+{
+    height: 623px;
+    width: auto;
+}
+
+.image-con
+{
+    position: relative;
+    display: inline-block;
+}
+
+.text-overlay
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 20px rgb(0, 0, 0);
+}
+
+.about-us
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 120px;
+    color: rgba(255, 255, 255, 0.808);
+}
+
+.img
+{ 
+    height: 330px;
+    width: 40%;
+    float: right;
+    padding: 10px;
+    /* box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2); */
+}
+
+.img1 
+{
+    height: 330px;
+    width: 40%;
+    float: left;
+    padding: 10px;
+    /* box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2); */
+}
+
+.secondary-images
+{
+    /* border: 2px solid black; */
+    padding: 10px;
+    height: 350px;
+    margin: 10px;
+    background-color: rgb(190, 222, 222);
+}
+
+body
+{
+    background-color: rgb(151, 184, 184);
+}
+
+h2
+{
+    color: rgb(56, 56, 56);
+    font-family: tahoma;
+    font-size: 35px;
+}
+
+.para1
+{
+    color: rgb(56, 56, 56);
+    font-family: tahoma;
+    font-size: 20px;
+    /* padding: 10px 400px 10px 10px; */
+}
+
+.para2
+{
+    color: rgb(56, 56, 56);
+    font-family: tahoma;
+    font-size: 20px;
+    /* padding: 10px 10px 10px 400px; */
+}
+
+footer
+{
+    text-align: center;
+}
+
+.footer
+{
+    text-decoration: none;
+}
