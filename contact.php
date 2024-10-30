@@ -1,4 +1,4 @@
-<?php
+
 
 include('db.php'); 
 include('assets/header.php'); 
